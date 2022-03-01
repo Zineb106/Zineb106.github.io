@@ -1,1 +1,59 @@
 <h1>Test</h1>
+ 
+<head>
+  
+  <style>
+    div.tooltip {
+      color: #222;
+      background-color: #DCECD3 ;
+      padding: .5em;
+      text-shadow: #f5f5f5 0 1px 0;
+      border-radius: 2px;
+      opacity: 0.9;
+      position: absolute;
+      text-align: center;
+      border: 1px;
+    }
+
+    div.tooltip1 {
+      color: #222;
+      background-color: #EFF3ED  ;
+      padding: .5em;
+      text-shadow: #f5f5f5 0 1px 0;
+      border-radius: 2px;
+      opacity: 0.9;
+      position: absolute;
+      text-align: center;
+      border: 1px;
+    }
+ div.tooltip8 {
+      color: #222;
+      background-color: #EFF3ED  ;
+      padding: .5em;
+      text-shadow: #f5f5f5 0 1px 0;
+      border-radius: 2px;
+      opacity: 0.9;
+      position: absolute;
+      text-align: center;
+      border: 1px;
+    }
+table{
+background-color: #FFFFFF;
+}
+</style>
+</head>
+<table border=3  >
+
+<table border=3 >
+<tr> 
+<td> <FONT size="3pt">    Evolution de la consommation  en mégawatt par heure (MWh) dans la région" ${region1} ": </FONT > ${lineChart(data)}</td>
+<td> <FONT size="3pt">     Consommation ${consotype} en mégawatt par heure (MWh) en ${years} dans la région "${region1}" : </FONT>  ${PieChartRegion(data)}</td>
+
+</tr> 
+<tr> 
+<td>${BartChart(data)}</td>
+<td> <FONT size="3pt"> Carte de la Consommation du ${consotype} en ${years}  : </FONT> 
+${CarteGeo(data)}</td>
+</tr>
+</table>
+</table>
